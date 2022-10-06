@@ -18,7 +18,10 @@ body {
         padding-left: 0;
     }
 
-    .herotitle, .search-filter-section, .hebergements-section, .activites-section {
+    .herotitle,
+    .search-filter-section,
+    .hebergements-section,
+    .activites-section {
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -141,19 +144,21 @@ img[src="images/logo/Booki.png"] {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .filters-title{
+    .filters-title {
         width: 100%;
     }
 }
 
-.herotitle h1, .herotitle p {
+.herotitle h1,
+.herotitle p {
     margin: 0;
     line-height: 1.5;
 }
 
 @media only screen and (max-width: 1024px) {
     .herotitle {
-        padding-top: 24px;;
+        padding-top: 24px;
+        ;
     }
 }
 
@@ -165,10 +170,7 @@ img[src="images/logo/Booki.png"] {
         margin-right: 0;
     }
 
-    .search-filter-section {
-        
-       
-    }
+    .search-filter-section {}
 }
 
 .search-box {
@@ -236,7 +238,7 @@ button[type="submit"]:hover {
 
 .magnicon {
 
-margin: 0;
+    margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
@@ -246,7 +248,7 @@ margin: 0;
 }
 
 @media only screen and (max-width: 768px) {
-    
+
     .search-box {
         width: 100%;
     }
@@ -264,7 +266,7 @@ margin: 0;
     align-items: center;
 }
 
-.filters-title{
+.filters-title {
     margin-right: 24px;
     margin-top: 0;
     margin-bottom: 0;
@@ -278,7 +280,7 @@ margin: 0;
     border: 2px solid #d0cece;
     background-color: white;
     outline: none;
-    margin-right: 24px;  
+    margin-right: 24px;
     border-radius: 24px;
     padding: 0;
     align-items: center;
@@ -289,7 +291,7 @@ margin: 0;
 .filter-button-icon {
     display: inline-flex;
     align-items: center;
-    
+
 }
 
 .filter-button-icon {
@@ -338,7 +340,8 @@ margin: 0;
         border: 1px solid #DEEBFF;
     }
 
-    .filters-title, .herotitle {
+    .filters-title,
+    .herotitle {
         padding-bottom: 16px;
     }
 }
@@ -348,7 +351,7 @@ margin: 0;
         margin-bottom: 16px;
         margin-right: 16px;
     }
-    
+
 
 }
 
@@ -381,6 +384,12 @@ margin: 0;
     }
 }
 
+.two-third-page {
+    width: 66%;
+    background-color: #F2F2F2;
+    border-radius: 24px;
+    min-width: 800px;
+}
 
 .hebergements-section {
     display: flex;
@@ -388,44 +397,46 @@ margin: 0;
     flex-wrap: wrap-reverse;
 }
 
-.hebergements-card-container {
-    display: inline-flex;
+.hebergements-cards {
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-around;
-    height: 624px;
-    background-color: #F2F2F2;
-    width: 880px;
-    border-radius: 16px;
-
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.card-grid-text {
-    width: 100%;
-    margin-left: 36px;
+.hebergements-card-container {}
 
+.card-grid-title {
+    margin-bottom: 0;
+    padding-left: 32px;
+    padding-top: 32px;
 }
 
 p.card-grid-text {
     font-weight: 600;
-}
-
-.card-grid-title {
-    margin-bottom: 0;
-
+    padding-left: 32px;
+    padding-bottom: 32px;
+    margin: 0;
 }
 
 .hebergements-card {
-    background-color: white;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
-    border: 4px solid white;
-    border-radius: 16px;
-    width: 240px;
+    width: 33%;
+    padding: 16px;
+    box-sizing: border-box;
     transition: transform .2s;
 }
 
 .hebergements-card:hover {
     transform: scale(1.05);
+}
+
+.hebergements-card>a {
+    border-radius: 16px;
+    padding: 4px;
+    background: white;
+    display: block;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .hebergements-card-image {
@@ -442,9 +453,7 @@ p.card-grid-text {
 }
 
 .hebergements-card-body {
-
     height: 50px;
-
     line-height: 0.5;
     padding-left: 16px;
     padding-bottom: 8px;
@@ -467,33 +476,59 @@ p.card-grid-text {
 
 @media only screen and (max-width: 768px) {
 
-    .card-grid-text {
-        margin: 16px;
+    .hebergements-section {
+        padding: 0;
     }
 
-    .hebergements-card-container {
-        height: fit-content;
+    .two-third-page {
         background-color: white;
+        width: 100%;
+        min-width: 300px;
+        padding: 0 16px;
+    }
+
+.card-grid-title {
+    padding-bottom: 16px;
+}
+
+    .card-grid-text {
+        padding-left: 0;
         width: 100%;
     }
 
-    .hebergements-card {
-        width: 88%;
-        margin: 8px auto;
+    .card-grid-text a {
+        padding-left: 0;
     }
 
+    .hebergements-card-container {}
+
+    .hebergements-cards {
+        padding: 0;
+        padding-bottom: 32px;
+    }
+
+    .hebergements-card {
+        width: 100%;
+        padding: 8px 0;
+
+    }
+
+    p.card-grid-text {
+        padding-left: 0;
+    }
+
+
+
 }
 
-.populaires {
+aside {
+    width: 33%;
+    min-width: 400px;
     background-color: #F2F2F2;
-    width: 420px;
-    height: 624px;
-    border-radius: 16px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    border-radius: 24px;
 }
+
+.populaires {}
 
 .populaires-title {
     display: flex;
@@ -504,11 +539,15 @@ p.card-grid-text {
 }
 
 .populaires-title h2 {
-    margin-left: 36px;
+    padding-left: 32px;
 }
 
 .populaires-title i {
-    margin-right: 36px;
+    padding-right: 32px
+}
+
+.populaires-card-padding {
+    padding: 16px 32px;
 }
 
 .populaires-card {
@@ -516,7 +555,7 @@ p.card-grid-text {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border: 4px solid white;
     border-radius: 16px;
-    width: 346px;
+    width: 100%;
     transition: transform .2s;
 }
 
@@ -571,32 +610,32 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
 }
 
 @media only screen and (max-width: 768px) {
-    .populaires {
+    aside {
         width: 100%;
-        height: 580px;
-        flex-direction: row;
-        flex-wrap: wrap;
+        min-width: 80px;
         border-radius: 0;
-        justify-items: center;
-        align-content: flex-start;
-        gap: 8px;
+        padding-bottom: 32px;
     }
 
+    .populaires-card-padding {
+        padding: 8px 16px;
+    }
+
+
     .populaires-title {
-        margin-top: 16px;
+        padding-top: 16px;
     }
 
     .populaires-title h2 {
-        margin-left: 16px;
+        padding-left: 16px;
     }
 
     .populaires-title i {
-        position: relative;
-        left: 16px;
+        padding-left: 36px;
     }
 
     .populaires-card {
-        width: 88%;
+        width: 100%;
     }
 }
 
