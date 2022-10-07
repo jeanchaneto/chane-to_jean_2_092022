@@ -474,6 +474,14 @@ p.card-grid-text {
     padding-top: 16px;
 }
 
+p.card-grid-text a {
+    transition: color .5s;
+}
+
+p.card-grid-text a:hover {
+    color: #0065FC;
+}
+
 @media only screen and (max-width: 768px) {
 
     .hebergements-section {
@@ -640,11 +648,6 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
 }
 
 .activites {
-    width: 1352px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-around;
     padding-top: 32px;
     padding-bottom: 64px;
 }
@@ -653,20 +656,43 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
     width: 100%;
 }
 
+.activites-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.activites-left {
+    display: flex;
+    /*padding-right: 24px;*/
+    box-sizing: border-box;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.activites-right {
+    display: flex;
+    /*padding-left: 24px;*/
+    box-sizing: border-box;
+    width: 50%;
+    justify-content: space-between;
+}
+
 .card-row-container {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding-left: 24px;
+    padding-right: 24px;
 }
+
 
 .activites-large-card {
     height: 448px;
-    width: 304px;
+    width: 50%;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
-
+    flex-shrink: 0;
 }
 
 .activites-large-card:hover {
@@ -706,10 +732,11 @@ img[src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"]
 
 .activites-bsize-card {
     height: 238px;
-    width: 304px;
+    width: 100%;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
+    padding-left: ;
 }
 
 .activites-bsize-card:hover {
@@ -732,7 +759,7 @@ img[src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] {
 
 .activites-csize-card {
     height: 168px;
-    width: 304px;
+    width: 100%;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
@@ -758,7 +785,7 @@ img[src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"] {
 
 .activites-dsize-card {
     height: 196px;
-    width: 304px;
+    width: 100%;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
