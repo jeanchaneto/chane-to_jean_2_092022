@@ -410,7 +410,7 @@ button[type="submit"]:hover {
 .card-grid-title {
     margin-bottom: 0;
     padding-left: 32px;
-    padding-top: 32px;
+    padding-top: 0;
 }
 
 p.card-grid-text {
@@ -495,9 +495,9 @@ p.card-grid-text a:hover {
         padding: 0 16px;
     }
 
-.card-grid-title {
-    padding-bottom: 16px;
-}
+    .card-grid-title {
+        padding-bottom: 16px;
+    }
 
     .card-grid-text {
         padding-left: 0;
@@ -507,8 +507,6 @@ p.card-grid-text a:hover {
     .card-grid-text a {
         padding-left: 0;
     }
-
-    .hebergements-card-container {}
 
     .hebergements-cards {
         padding: 0;
@@ -525,6 +523,31 @@ p.card-grid-text a:hover {
         padding-left: 0;
     }
 
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+ .two-third-page {
+    background-color: white;
+    padding-top: 32px;
+ }
+
+ .card-grid-title {
+    padding-left: 0;
+}
+
+p.card-grid-text {
+    padding-left: 0;
+    padding-top: 8px;
+    padding-bottom: 0;
+}
+
+.hebergements-cards {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -16px;
+    margin-right: -16px;
+}
 
 
 }
@@ -556,6 +579,10 @@ aside {
 
 .populaires-card-padding {
     padding: 16px 32px;
+}
+
+.populaires-card-padding-top {
+    padding: 0 32px 16px 32px;
 }
 
 .populaires-card {
@@ -629,6 +656,9 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
         padding: 8px 16px;
     }
 
+    .populaires-card-padding-top {
+        padding: 0px 16px 8px 16px;
+    }
 
     .populaires-title {
         padding-top: 16px;
@@ -728,7 +758,7 @@ img[src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"]
     padding-left: 16px;
     margin-bottom: 16px;
     font-size: 16px;
-    
+
 }
 
 .activites-bsize-card {
@@ -839,15 +869,26 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
 
 @media only screen and (max-width: 768px) {
 
+    .activites {
+        padding-top: 16px;;
+        padding-bottom: 32px;
+    }
+
     .activites-container {
         min-width: 0;
     }
 
-    .activites-left, .activites-right {
+    .activites-left,
+    .activites-right {
         flex-wrap: wrap;
         width: 100%;
     }
-    .activites-esize-card, .activites-bsize-card, .activites-large-card, .activites-csize-card, .activites-dsize-card {
+
+    .activites-esize-card,
+    .activites-bsize-card,
+    .activites-large-card,
+    .activites-csize-card,
+    .activites-dsize-card {
         width: 100%;
         height: 190px;
         padding-bottom: 16px;
@@ -859,7 +900,11 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
         width: 100%;
     }
 
-    .activites-esize-card-image, .activites-bsize-card-image, .activites-large-card-image, .activites-csize-card-image, .activites-dsize-card-image {
+    .activites-esize-card-image,
+    .activites-bsize-card-image,
+    .activites-large-card-image,
+    .activites-csize-card-image,
+    .activites-dsize-card-image {
         height: 150px;
         width: 100%;
     }
@@ -868,15 +913,19 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
         height: 100%;
     }
 
-} 
+}
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) { 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
+    
     .activites-container {
         min-width: 0;
         gap: 32px;
     }
-    .activites-left, .activites-right {
-       
+
+    .activites-left,
+    .activites-right {
+
         width: 100%;
     }
 
@@ -896,14 +945,16 @@ footer {
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 48px;
-    gap: 224px;
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 32px;
+    ;
 }
 
 footer h2 {
     font-size: 18px;
     margin-bottom: 0;
-    margin-top: 32px;
+
 }
 
 footer a {
@@ -914,21 +965,43 @@ footer a:hover {
     color: #0065FC;
 }
 
-.assistance {
-    margin-left: 72px;
+
+.apropos {
+    padding-left: 48px;
+    padding-right: 220px;
+}
+
+.noshebergements {
+    padding-right: 220px;
 }
 
 @media only screen and (max-width: 768px) {
-    footer {
+    .footer-column {
         width: 100%;
+        padding-left: 16px;
     }
 
-    .assistance {
-        margin-left: 0;
-        width: 100%;
+    .apropos {
+        padding-right: 0;
     }
 
+    .noshebergements {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     .footer-container {
-        gap: 0;
+        flex-wrap: nowrap;
     }
+
+    .apropos {
+        padding-left: 16px;
+        padding-right: 96px;
+    }
+
+    .noshebergements {
+        padding-right: 96px;
+    }
+
 }
