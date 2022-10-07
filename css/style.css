@@ -659,22 +659,24 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
 .activites-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 1400px;
 }
 
 .activites-left {
     display: flex;
-    /*padding-right: 24px;*/
     box-sizing: border-box;
     width: 50%;
     justify-content: space-between;
+    flex-shrink: 1;
 }
 
 .activites-right {
     display: flex;
-    /*padding-left: 24px;*/
     box-sizing: border-box;
     width: 50%;
     justify-content: space-between;
+    flex-shrink: 1;
 }
 
 .card-row-container {
@@ -708,9 +710,8 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
 }
 
 img[src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"] {
-    position: relative;
-    right: 50%;
-    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 img[src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"] {
@@ -724,10 +725,10 @@ img[src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"]
 }
 
 .activites-card-title h3 {
-    margin-left: 16px;
-    margin-top: 8px;
+    padding-left: 16px;
     margin-bottom: 16px;
     font-size: 16px;
+    
 }
 
 .activites-bsize-card {
@@ -736,7 +737,6 @@ img[src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"]
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
-    padding-left: ;
 }
 
 .activites-bsize-card:hover {
@@ -754,7 +754,7 @@ img[src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] {
     object-fit: cover;
     object-position: center;
     height: 185px;
-    width: 304px;
+    width: 100%;
 }
 
 .activites-csize-card {
@@ -780,7 +780,7 @@ img[src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] {
 img[src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"] {
     object-fit: cover;
     height: 113px;
-    width: 304px;
+    width: 100%;
 }
 
 .activites-dsize-card {
@@ -807,12 +807,12 @@ img[src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"] {
     object-fit: cover;
     object-position: top;
     height: 143px;
-    width: 304px;
+    width: 100%;
 }
 
 .activites-esize-card {
     height: 212px;
-    width: 304px;
+    width: 100%;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
@@ -834,40 +834,56 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
     object-fit: cover;
     object-position: top;
     height: 159px;
-    width: 304px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
 
-    .card-row-container {
-        width: 100%;
+    .activites-container {
+        min-width: 0;
+    }
 
-        flex-direction: row;
+    .activites-left, .activites-right {
         flex-wrap: wrap;
-
-        justify-items: center;
-        align-content: center;
-        gap: 16px;
-    }
-
-    .activites {
         width: 100%;
-        gap: 16px;
-        align-content: flex-end;
+    }
+    .activites-esize-card, .activites-bsize-card, .activites-large-card, .activites-csize-card, .activites-dsize-card {
+        width: 100%;
+        height: 190px;
+        padding-bottom: 16px;
+        margin-bottom: 16px;
     }
 
-    /*
-    .responsive-card {
-        width: 88%;
-        height: 198px;
-        margin: 8px auto;
-    } 
-    */
-
-    .activites h2 {
-        margin: 16px;
+    .card-row-container {
+        padding: 0;
+        width: 100%;
     }
 
+    .activites-esize-card-image, .activites-bsize-card-image, .activites-large-card-image, .activites-csize-card-image, .activites-dsize-card-image {
+        height: 150px;
+        width: 100%;
+    }
+
+    .activites img {
+        height: 100%;
+    }
+
+} 
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) { 
+    .activites-container {
+        min-width: 0;
+        gap: 32px;
+    }
+    .activites-left, .activites-right {
+       
+        width: 100%;
+    }
+
+    .card-row-container {
+        width: 50%;
+        padding-right: 0;
+    }
 }
 
 
