@@ -793,6 +793,7 @@ aside {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
+    width: 50%;
 }
 
 .activites-large-card {
