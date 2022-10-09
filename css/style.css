@@ -2,7 +2,6 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height: 2;
     box-sizing: border-box;
-
     font-weight: 300;
 }
 
@@ -112,7 +111,8 @@ img[src="images/logo/Booki.png"] {
     img[src="images/logo/Booki.png"] {
         padding-top: 32px;
         margin: 0 auto;
-        padding-left: 32px;;
+        padding-left: 32px;
+        ;
     }
 
     .navbar ul {
@@ -141,14 +141,15 @@ img[src="images/logo/Booki.png"] {
 
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    
+
     .filters-title {
         width: 100%;
     }
+
     .logo {
         padding-left: 16px;
     }
-    
+
 }
 
 
@@ -163,7 +164,7 @@ img[src="images/logo/Booki.png"] {
         padding-top: 24px;
     }
 
-    
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -176,19 +177,19 @@ img[src="images/logo/Booki.png"] {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) { 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 
- .filters-title {
-    padding-bottom: 16px;
- }
+    .filters-title {
+        padding-bottom: 16px;
+    }
 
- .filter-buttons {
-    display: flex;
- }
+    .filter-buttons {
+        display: flex;
+    }
 
- .filter-buttons span {
- padding-left: 2px;
-}
+    .filter-buttons span {
+        padding-left: 2px;
+    }
 
 }
 
@@ -543,38 +544,38 @@ p.card-grid-text a:hover {
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
-.info-container {
-    padding-top: 0;
-    padding-bottom: 32px;
-}
+    .info-container {
+        padding-top: 0;
+        padding-bottom: 32px;
+    }
 
-.info-container p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
+    .info-container p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
 
- .two-third-page {
-    background-color: white;
-    padding-top: 0;
- }
+    .two-third-page {
+        background-color: white;
+        padding-top: 0;
+    }
 
- .card-grid-title {
-    padding-left: 0;
-    margin-top: 0;
-}
+    .card-grid-title {
+        padding-left: 0;
+        margin-top: 0;
+    }
 
-p.card-grid-text {
-    padding-left: 0;
-    padding-top: 8px;
-    padding-bottom: 32px;
-}
+    p.card-grid-text {
+        padding-left: 0;
+        padding-top: 8px;
+        padding-bottom: 32px;
+    }
 
-.hebergements-cards {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: -16px;
-}
+    .hebergements-cards {
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: -16px;
+    }
 
 
 }
@@ -609,7 +610,7 @@ aside {
 
 .populaires-card-padding {
     padding-bottom: 16px;
-    
+
 }
 
 
@@ -634,8 +635,6 @@ aside {
 .populaires-card-image {
     height: 134px;
     width: 40%;
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
@@ -643,13 +642,12 @@ aside {
 }
 
 .populaires-card-image img {
+    object-fit: cover;
     height: 100%;
-    align-self: center;
+    width: 100%
 }
 
-img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] {
-    scale: 1.5;
-}
+
 
 .populaires-card-body {
     line-height: 0.5;
@@ -703,31 +701,67 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
     }
 
     .populaires-title i {
-        padding-right:16px;
+        padding-right: 16px;
     }
 
     .populaires-card {
         width: 100%;
     }
+
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) { 
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 
-.hebergements-section {
-    flex-wrap: wrap;
-}
+    .hebergements-section {
+        flex-wrap: wrap;
+    }
 
-aside {
-    width: 100%;
-    max-width: none;
-}
+    aside {
+        width: 100%;
+        max-width: none;
+    }
+
+    .populaires h2 {
+        padding-left: 32px;
+    }
 
     .populaires-cards {
         display: flex;
+        padding-left: 16px;
+        padding-right: 16px;
+        justify-content: space-around;
+
     }
+
     .populaires-card-padding {
         width: 33%;
+        padding-left: 16px;
+        padding-right: 16px;
     }
+
+    .populaires-card,
+    .populaires-card a {
+        height: 100%;
+    }
+
+    .populaires-card-image {
+        height: 176px;
+    }
+
+    .populaires-card-body i {
+        padding-top: 24px;
+
+    }
+
+    .populaires-card-body {
+        padding-right: 16px;
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
 
 }
 
@@ -771,7 +805,7 @@ aside {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    
+
 }
 
 
@@ -781,7 +815,7 @@ aside {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
-    flex-shrink: 0;
+
 }
 
 .activites-large-card:hover {
@@ -927,7 +961,8 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
 @media only screen and (max-width: 768px) {
 
     .activites {
-        padding-top: 16px;;
+        padding-top: 16px;
+        ;
         padding-bottom: 32px;
     }
 
@@ -940,6 +975,7 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
         flex-wrap: wrap;
         width: 100%;
         padding: 0;
+        gap: 0;
     }
 
     .activites-esize-card,
@@ -974,8 +1010,8 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    
-    
+
+
     .activites-container {
         min-width: 0;
         gap: 32px;
