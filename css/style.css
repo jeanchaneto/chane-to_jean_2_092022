@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1350px;
     margin: auto;
     padding-left: 48px;
     padding-top: 16px;
@@ -102,8 +102,8 @@ img[src="images/logo/Booki.png"] {
     width: auto;
 }
 
+@media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 1024px) {
 
     .navbar {
         justify-content: space-around;
@@ -111,12 +111,8 @@ img[src="images/logo/Booki.png"] {
 
     img[src="images/logo/Booki.png"] {
         padding-top: 32px;
-
-    }
-
-    .logo {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        padding-left: 32px;;
     }
 
     .navbar ul {
@@ -143,11 +139,18 @@ img[src="images/logo/Booki.png"] {
 
 }
 
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    
     .filters-title {
         width: 100%;
     }
+    .logo {
+        padding-left: 16px;
+    }
+    
 }
+
 
 .herotitle h1,
 .herotitle p {
@@ -158,8 +161,9 @@ img[src="images/logo/Booki.png"] {
 @media only screen and (max-width: 1024px) {
     .herotitle {
         padding-top: 24px;
-        ;
     }
+
+    
 }
 
 @media only screen and (max-width: 768px) {
@@ -170,7 +174,22 @@ img[src="images/logo/Booki.png"] {
         margin-right: 0;
     }
 
-    .search-filter-section {}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) { 
+
+ .filters-title {
+    padding-bottom: 16px;
+ }
+
+ .filter-buttons {
+    display: flex;
+ }
+
+ .filter-buttons span {
+ padding-left: 2px;
+}
+
 }
 
 .search-box {
@@ -376,7 +395,6 @@ button[type="submit"]:hover {
 @media only screen and (max-width: 768px) {
     .info-container {
         align-items: flex-start;
-        margin-top: 8px;
     }
 
     .info-text {
@@ -404,8 +422,6 @@ button[type="submit"]:hover {
     padding-left: 16px;
     padding-right: 16px;
 }
-
-.hebergements-card-container {}
 
 .card-grid-title {
     margin-bottom: 0;
@@ -527,26 +543,37 @@ p.card-grid-text a:hover {
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 
+.info-container {
+    padding-top: 0;
+    padding-bottom: 32px;
+}
+
+.info-container p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
  .two-third-page {
     background-color: white;
-    padding-top: 32px;
+    padding-top: 0;
  }
 
  .card-grid-title {
     padding-left: 0;
+    margin-top: 0;
 }
 
 p.card-grid-text {
     padding-left: 0;
     padding-top: 8px;
-    padding-bottom: 0;
+    padding-bottom: 32px;
 }
 
 .hebergements-cards {
     padding-left: 0;
     padding-right: 0;
     margin-left: -16px;
-    margin-right: -16px;
 }
 
 
@@ -554,12 +581,11 @@ p.card-grid-text {
 
 aside {
     width: 33%;
-    min-width: 400px;
+    min-width: 420px;
+    max-width: 420px;
     background-color: #F2F2F2;
     border-radius: 24px;
 }
-
-.populaires {}
 
 .populaires-title {
     display: flex;
@@ -570,20 +596,22 @@ aside {
 }
 
 .populaires-title h2 {
-    padding-left: 32px;
+    padding-left: 48px;
 }
 
 .populaires-title i {
-    padding-right: 32px
+    padding-right: 40px
 }
 
-.populaires-card-padding {
+.populaires-cards {
     padding: 16px 32px;
 }
 
-.populaires-card-padding-top {
-    padding: 0 32px 16px 32px;
+.populaires-card-padding {
+    padding-bottom: 16px;
+    
 }
+
 
 .populaires-card {
     background-color: white;
@@ -592,6 +620,7 @@ aside {
     border-radius: 16px;
     width: 100%;
     transition: transform .2s;
+    box-sizing: border-box;
 }
 
 .populaires-card-inside-container {
@@ -604,7 +633,7 @@ aside {
 
 .populaires-card-image {
     height: 134px;
-    width: 128px;
+    width: 40%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -625,8 +654,9 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
 .populaires-card-body {
     line-height: 0.5;
     padding-left: 16px;
+    padding-right: 32px;
     padding-bottom: 8px;
-    width: 160px;
+    width: 60%;
 }
 
 .populaires-card-body h3 {
@@ -652,6 +682,10 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
         padding-bottom: 32px;
     }
 
+    .populaires-cards {
+        padding: 0;
+    }
+
     .populaires-card-padding {
         padding: 8px 16px;
     }
@@ -669,12 +703,32 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
     }
 
     .populaires-title i {
-        padding-left: 36px;
+        padding-right:16px;
     }
 
     .populaires-card {
         width: 100%;
     }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) { 
+
+.hebergements-section {
+    flex-wrap: wrap;
+}
+
+aside {
+    width: 100%;
+    max-width: none;
+}
+
+    .populaires-cards {
+        display: flex;
+    }
+    .populaires-card-padding {
+        width: 33%;
+    }
+
 }
 
 .activites {
@@ -690,7 +744,7 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-width: 1400px;
+    min-width: 1350px;
 }
 
 .activites-left {
@@ -699,6 +753,8 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
     width: 50%;
     justify-content: space-between;
     flex-shrink: 1;
+    gap: 40px;
+    padding-right: 20px;
 }
 
 .activites-right {
@@ -707,14 +763,15 @@ img[src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"] 
     width: 50%;
     justify-content: space-between;
     flex-shrink: 1;
+    gap: 40px;
+    padding-left: 20px;
 }
 
 .card-row-container {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    padding-left: 24px;
-    padding-right: 24px;
+    
 }
 
 
@@ -882,6 +939,7 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
     .activites-right {
         flex-wrap: wrap;
         width: 100%;
+        padding: 0;
     }
 
     .activites-esize-card,
@@ -925,8 +983,12 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
 
     .activites-left,
     .activites-right {
-
+        padding: 0;
         width: 100%;
+    }
+
+    .activites-right {
+        flex-direction: row-reverse;
     }
 
     .card-row-container {
@@ -945,7 +1007,7 @@ footer {
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1400px;
+    max-width: 1350px;
     margin: auto;
     padding-top: 32px;
     ;
