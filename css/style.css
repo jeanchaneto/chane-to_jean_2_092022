@@ -13,6 +13,7 @@ body {
 }
 
 @media only screen and (max-width: 1024px) {
+
     .container {
         padding-left: 0;
     }
@@ -103,7 +104,6 @@ img[src="images/logo/Booki.png"] {
 
 @media only screen and (max-width: 768px) {
 
-
     .navbar {
         justify-content: space-around;
     }
@@ -112,7 +112,6 @@ img[src="images/logo/Booki.png"] {
         padding-top: 32px;
         margin: 0 auto;
         padding-left: 32px;
-        ;
     }
 
     .navbar ul {
@@ -163,7 +162,6 @@ img[src="images/logo/Booki.png"] {
     .herotitle {
         padding-top: 24px;
     }
-
 
 }
 
@@ -257,11 +255,11 @@ button[type="submit"]:hover {
 }
 
 .magnicon {
-
     margin: 0;
 }
 
 @media only screen and (min-width: 768px) {
+
     button[type="submit"] {
         display: none;
     }
@@ -311,7 +309,6 @@ button[type="submit"]:hover {
 .filter-button-icon {
     display: inline-flex;
     align-items: center;
-
 }
 
 .filter-button-icon {
@@ -372,7 +369,6 @@ button[type="submit"]:hover {
         margin-right: 16px;
     }
 
-
 }
 
 .info-container {
@@ -394,6 +390,7 @@ button[type="submit"]:hover {
 }
 
 @media only screen and (max-width: 768px) {
+
     .info-container {
         align-items: flex-start;
     }
@@ -478,7 +475,6 @@ p.card-grid-text {
 
 .hebergements-card-body h3 {
     font-size: 16px;
-
 }
 
 .hebergements-card-body p {
@@ -533,7 +529,6 @@ p.card-grid-text a:hover {
     .hebergements-card {
         width: 100%;
         padding: 8px 0;
-
     }
 
     p.card-grid-text {
@@ -568,7 +563,7 @@ p.card-grid-text a:hover {
     p.card-grid-text {
         padding-left: 0;
         padding-top: 8px;
-        padding-bottom: 32px;
+        padding-bottom: 0;
     }
 
     .hebergements-cards {
@@ -576,7 +571,6 @@ p.card-grid-text a:hover {
         padding-right: 0;
         margin-left: -16px;
     }
-
 
 }
 
@@ -593,7 +587,6 @@ aside {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
 }
 
 .populaires-title h2 {
@@ -610,7 +603,6 @@ aside {
 
 .populaires-card-padding {
     padding-bottom: 16px;
-
 }
 
 
@@ -638,7 +630,6 @@ aside {
     overflow: hidden;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
-
 }
 
 .populaires-card-image img {
@@ -646,8 +637,6 @@ aside {
     height: 100%;
     width: 100%
 }
-
-
 
 .populaires-card-body {
     line-height: 0.5;
@@ -673,6 +662,7 @@ aside {
 }
 
 @media only screen and (max-width: 768px) {
+
     aside {
         width: 100%;
         min-width: 80px;
@@ -710,7 +700,7 @@ aside {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1300px) {
 
     .hebergements-section {
         flex-wrap: wrap;
@@ -719,6 +709,7 @@ aside {
     aside {
         width: 100%;
         max-width: none;
+        margin-top: 32px;
     }
 
     .populaires h2 {
@@ -730,7 +721,6 @@ aside {
         padding-left: 16px;
         padding-right: 16px;
         justify-content: space-around;
-
     }
 
     .populaires-card-padding {
@@ -760,8 +750,6 @@ aside {
         flex-direction: column;
         justify-content: space-between;
     }
-
-
 
 }
 
@@ -805,9 +793,7 @@ aside {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-
 }
-
 
 .activites-large-card {
     height: 448px;
@@ -815,7 +801,6 @@ aside {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
-
 }
 
 .activites-large-card:hover {
@@ -849,7 +834,6 @@ img[src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"]
     padding-left: 16px;
     margin-bottom: 16px;
     font-size: 16px;
-
 }
 
 .activites-bsize-card {
@@ -884,7 +868,6 @@ img[src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"] {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
-
 }
 
 .activites-csize-card:hover {
@@ -910,7 +893,6 @@ img[src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"] {
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 16px;
     transition: transform .2s;
-
 }
 
 .activites-dsize-card:hover {
@@ -1009,8 +991,7 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-
+@media only screen and (min-width: 769px) and (max-width: 1300px) {
 
     .activites-container {
         min-width: 0;
@@ -1033,7 +1014,6 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
     }
 }
 
-
 footer {
     background-color: #F2F2F2;
     padding-bottom: 60px;
@@ -1046,13 +1026,11 @@ footer {
     max-width: 1350px;
     margin: auto;
     padding-top: 32px;
-    ;
 }
 
 footer h2 {
     font-size: 18px;
     margin-bottom: 0;
-
 }
 
 footer a {
@@ -1062,7 +1040,6 @@ footer a {
 footer a:hover {
     color: #0065FC;
 }
-
 
 .apropos {
     padding-left: 48px;
