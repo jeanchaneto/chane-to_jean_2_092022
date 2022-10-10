@@ -766,7 +766,6 @@ aside {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    min-width: 1350px;
 }
 
 .activites-left {
