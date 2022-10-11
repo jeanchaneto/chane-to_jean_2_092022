@@ -1052,6 +1052,11 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 768px) {
+    
+    .footer-container {
+        padding-left: 0;
+    }
+
     .footer-column {
         width: 100%;
         padding-left: 16px;
@@ -1069,6 +1074,7 @@ footer a:hover {
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .footer-container {
         flex-wrap: nowrap;
+        padding-left: 0;
     }
 
     .apropos {
