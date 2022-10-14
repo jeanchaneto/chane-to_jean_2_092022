@@ -138,7 +138,7 @@ img[src="images/logo/Booki.png"] {
 }
 
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
 
     .filters-title {
         width: 100%;
@@ -174,7 +174,7 @@ img[src="images/logo/Booki.png"] {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
 
     .filters-title {
         padding-bottom: 16px;
@@ -536,7 +536,7 @@ p.card-grid-text a:hover {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 992px) {
 
     .info-container {
         padding-top: 0;
