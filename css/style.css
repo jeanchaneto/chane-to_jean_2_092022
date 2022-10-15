@@ -12,7 +12,7 @@ body {
     padding-top: 16px;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 
     .container {
         padding-left: 0;
@@ -101,7 +101,7 @@ img[src="images/logo/Booki.png"] {
     width: auto;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .navbar {
         justify-content: space-around;
@@ -138,7 +138,7 @@ img[src="images/logo/Booki.png"] {
 }
 
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
     .filters-title {
         width: 100%;
@@ -157,14 +157,14 @@ img[src="images/logo/Booki.png"] {
     line-height: 1.5;
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
     .herotitle {
         padding-top: 24px;
     }
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .hebergements-section,
     .activites-section {
@@ -174,7 +174,7 @@ img[src="images/logo/Booki.png"] {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
     .filters-title {
         padding-bottom: 16px;
@@ -264,7 +264,7 @@ button[type="submit"]:hover {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .search-box {
         width: 100%;
@@ -340,7 +340,7 @@ button[type="submit"]:hover {
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .filters-title {
         width: 100%;
         margin-bottom: 8px;
@@ -362,7 +362,7 @@ button[type="submit"]:hover {
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .filter-button {
         margin-bottom: 16px;
         margin-right: 16px;
@@ -388,7 +388,7 @@ button[type="submit"]:hover {
     line-height: 1;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .info-container {
         align-items: flex-start;
@@ -494,7 +494,7 @@ p.card-grid-text a:hover {
     color: #0065FC;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .hebergements-section {
         padding: 0;
@@ -536,7 +536,7 @@ p.card-grid-text a:hover {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
     .info-container {
         padding-top: 0;
@@ -664,7 +664,7 @@ aside {
     padding-top:16px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     aside {
         width: 100%;
@@ -705,7 +705,7 @@ aside {
 
 /* Note: 1300px natural breakpoint when reducing desktop windows size*/
 
-@media only screen and (min-width: 769px) and (max-width: 1300px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
 
     .hebergements-section {
         flex-wrap: wrap;
@@ -945,7 +945,7 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
     width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 
     .activites {
         padding-top: 16px;
@@ -996,7 +996,7 @@ img[src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"] {
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1300px) {
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
 
     .activites-container {
         min-width: 0;
@@ -1056,7 +1056,7 @@ footer a:hover {
     padding-right: 220px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     
     .footer-container {
         padding-left: 0;
@@ -1076,7 +1076,7 @@ footer a:hover {
     }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     .footer-container {
         flex-wrap: nowrap;
         padding-left: 0;
